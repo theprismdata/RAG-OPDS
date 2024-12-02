@@ -1,0 +1,30 @@
+openai:
+  apikey: ""
+  chat_model: ""
+
+database:
+  opds_system_db:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  mongodb:
+    mongo_host: ""
+    mongo_port:
+    mongo_user: ""
+    mongo_passwd: ""
+    auth_source: ""
+
+mqtt:
+  address: ""
+  port:
+  id: opds
+  pwd: opds_pass
+  virtualhost: "/"
+
+RABBITMQ_SVC_QUEUE:
+  SUMMARY_Q_NAME: 'OPDS_SUMMARY_REQ'
+  SUMMARY_EXCHANGE_NAME: 'OPDS_SUMMARY_REQ_Exchange'
+  SUMMARY_ROUTE_KEY: 'OPDS_SUMMARY_REQ_Route'

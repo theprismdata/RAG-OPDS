@@ -1,0 +1,22 @@
+openai:
+  apikey: ""
+  embedding_model: ""
+  chat_model: ""
+
+database:
+  vector_db_postgres:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  opds_system_db:
+    address: ""
+    port:
+    id: ""
+    pwd: "!"
+    database: ""
+
+rest_config:
+  port: 9000

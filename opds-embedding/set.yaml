@@ -1,0 +1,41 @@
+openai:
+  apikey: ""
+  embedding_model: ""
+
+embedding_opt:
+  line_limit: True
+  max_line: 100
+
+database:
+  vector_db_postgres:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  opds_system_db:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  mongodb:
+    mongo_host: ""
+    mongo_port:
+    mongo_user: ""
+    mongo_passwd: ""
+    auth_source: ""
+
+mqtt:
+  address: ""
+  port:
+  id: opds
+  pwd: opds_pass
+  virtualhost: "/"
+
+RABBITMQ_SVC_QUEUE:
+  EMBEDDING_Q_NAME: 'OPDS_EMBEDDING_REQ'
+  EMBEDDING_EXCHANGE_NAME: 'OPDS_EMBEDDING_REQ_Exchange'
+  EMBEDDING_ROUTE_KEY: 'OPDS_EMBEDDING_REQ_Route'

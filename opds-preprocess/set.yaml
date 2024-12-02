@@ -1,0 +1,46 @@
+database:
+  vector_db_postgres:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  opds_system_db:
+    address: ""
+    port:
+    id: ""
+    pwd: ""
+    database: ""
+
+  mongodb:
+    mongo_host: ""
+    mongo_port:
+    mongo_user: ""
+    mongo_passwd: ""
+    auth_source: ""
+
+minio:
+  address: ""
+  accesskey: bp6W7KIOgQtKImj5NGDo
+  secretkey: 1rgunIl5Rg9Sn8GoRUa20a6jzO3TPlj6LuN7cDJW
+
+mqtt:
+  address: ""
+  port:
+  id: opds
+  pwd: opds_pass
+  virtualhost: "/"
+
+RABBITMQ_SVC_QUEUE:
+  PREPROCES_Q_NAME: 'OPDS_PREP_REQ'
+  PREPROCES_EXCHANGE_NAME: 'OPDS_PREP_REQ_Exchange'
+  PREPROCES_ROUTEKEY: 'OPDS_PREP_REQ_Route'
+
+  SUMMARY_Q_NAME: 'OPDS_SUMMARY_REQ'
+  SUMMARY_EXCHANGE_NAME: 'OPDS_SUMMARY_REQ_Exchange'
+  SUMMARY_ROUTE_KEY: 'OPDS_SUMMARY_REQ_Route'
+
+  EMBEDDING_Q_NAME: 'OPDS_EMBEDDING_REQ'
+  EMBEDDING_EXCHANGE_NAME: 'OPDS_EMBEDDING_REQ_Exchange'
+  EMBEDDING_ROUTE_KEY: 'OPDS_EMBEDDING_REQ_Route'
